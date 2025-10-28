@@ -1,0 +1,22 @@
+{
+  "subtitle": "aloqa",
+  "title": {
+    "before": "Xabar yuboring",
+    "highlight": "tez orada javob olasiz!"
+  },
+  "email": "abdunazarovasror16@gmail.com",
+  "form": {
+    "fullName": "To‘liq ism",
+    "fullNamePlaceholder": "Ism va familiyangiz",
+    "telegram": "Telegram foydalanuvchi nomi",
+    "telegramPlaceholder": "@foydalanuvchi_nomi",
+    "email": "Elektron pochta",
+    "emailPlaceholder": "Sizning email manzilingiz",
+    "phone": "Telefon raqam",
+    "phonePlaceholder": "Telefon raqamingiz",
+    "optional": "ixtiyoriy",
+    "message": "Xabar",
+    "messagePlaceholder": "Xabaringizni shu yerga yozing...",
+    "send": "Xabar yuborish"
+  }
+}

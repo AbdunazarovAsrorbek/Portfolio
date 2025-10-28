@@ -1,0 +1,205 @@
+.introduce {
+
+    &__subtitle {
+        font-size: 12px;
+        color: #ffffff;
+        font-weight: 300;
+        border: 1px solid #565656;
+        padding: 9px 20px;
+        border-radius: 30px;
+        margin-bottom: 53px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        p {
+            margin-top: 1px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__title {
+        font-size: 78px;
+        letter-spacing: -0.2px;
+        line-height: 90px;
+        margin-bottom: 43px;
+        font-weight: 300;
+
+        span {
+            color: #28e98c;
+        }
+    }
+
+    &__uptitle {
+        max-width: 480px;
+        color: #c5c5c5;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    &__loader {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    &__facts {
+        margin-top: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 100px;
+        text-align: center;
+    }
+
+    .facts__left {
+        h1 {
+            font-size: 72px;
+            color: #28e98c;
+            line-height: 56px;
+            margin-bottom: 38px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-align: left;
+            color: #c5c5c5;
+        }
+    }
+
+    .facts__right {
+        h1 {
+            font-size: 72px;
+            color: #28e98c;
+            line-height: 56px;
+            margin-bottom: 38px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-align: left;
+            color: #c5c5c5;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .introduce {
+
+        &__subtitle {
+            font-size: 10px;
+            padding: 7px 15px;
+            margin-bottom: 30px;
+            gap: 5px;
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 45px;
+            margin-bottom: 25px;
+        }
+
+        &__uptitle {
+            font-size: 14px;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__loader {
+            justify-content: left;
+            margin-bottom: 20px;
+        }
+
+        &__facts {
+            display: flex;
+            align-items: end;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .facts__left,
+        .facts__right {
+            h1 {
+                font-size: 48px;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .introduce {
+
+        &__subtitle {
+            font-size: 11px;
+            padding: 8px 18px;
+            gap: 7px;
+
+            p {
+                font-size: 11px;
+            }
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 60px;
+            margin-bottom: 35px;
+        }
+
+        &__uptitle {
+            font-size: 15px;
+            max-width: 90%;
+            margin-bottom: 25px;
+        }
+
+        &__loader {
+            justify-content: flex-start;
+            margin-bottom: 25px;
+        }
+
+        &__facts {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px;
+            text-align: center;
+        }
+
+        .facts__left,
+        .facts__right {
+            h1 {
+                font-size: 60px;
+                line-height: 48px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+    }
+}

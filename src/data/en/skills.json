@@ -1,0 +1,46 @@
+{
+  "subtitle": "My Skills",
+  "title": "My Skills",
+  "skill": [
+    {
+      "name": "HTML",
+      "image": "html",
+      "direction": "left"
+    },
+    {
+      "name": "CSS",
+      "image": "css",
+      "direction": "up"
+    },
+    {
+      "name": "SASS",
+      "image": "sass",
+      "direction": "down"
+    },
+    {
+      "name": "BS",
+      "image": "mysql",
+      "direction": "up"
+    },
+    {
+      "name": "Figma",
+      "image": "figma",
+      "direction": "right"
+    },
+    {
+      "name": "JS",
+      "image": "js",
+      "direction": "up"
+    },
+    {
+      "name": "React",
+      "image": "react",
+      "direction": "up"
+    },
+    {
+      "name": "TS",
+      "image": "ts",
+      "direction": "left"
+    }
+  ]
+}

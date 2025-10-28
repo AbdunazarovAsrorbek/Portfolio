@@ -1,0 +1,256 @@
+.leftSidebar {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #565656;
+    padding: 30px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        p {
+            text-align: right;
+            font-size: 14px;
+            font-weight: 400;
+            color: #FFF;
+        }
+    }
+
+    .profile {
+        position: relative;
+    }
+
+    .avatar {
+        font-size: 22px;
+    }
+
+    /* Dumaloq A belgisi */
+    .badge {
+        position: absolute;
+        top: -6px;
+        right: -22px;
+        width: 18px;
+        height: 18px;
+        // background-color: #007bff; 
+        border: 1px solid #565656;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // font-weight: bold;
+        font-family: sans-serif;
+        font-size: 10px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &__me {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 250px;
+            min-width: 250px;
+            height: 220px;
+            border-radius: 30px;
+            display: block;
+            object-fit: cover;
+            /* Rasm sig‘maydigan joyini kesadi */
+            object-position: center;
+            /* Qirqishni markazdan qiladi */
+        }
+    }
+
+    &__email {
+        padding: 25px 0 5px;
+    }
+
+    &__email,
+    &__address {
+        font-size: 22px;
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        padding-bottom: 15px;
+    }
+
+    &__copyright {
+        height: 35px;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__col {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 2px solid #565656;
+        border-radius: 50%;
+        color: #999999;
+        font-size: 20px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            border: 2px solid #28e98c;
+            color: #28e98c;
+        }
+
+        a {
+            cursor: pointer;
+        }
+    }
+
+    &__link {
+        width: 100%;
+        background: #28e98c;
+        color: #000000;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 30px;
+        text-transform: uppercase;
+        border: 2px solid #28e98c;
+        transition: all .3s ease;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        &:hover {
+            color: #28e98c;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    // Responsive
+    @media (max-width: 480px) {
+        padding: 15px;
+
+        &__header {
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            img {
+                max-width: 100px;
+                height: auto;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        &__me img {
+            max-width: 180px;
+        }
+
+        &__email {
+            padding: 15px 0 5px;
+        }
+
+        &__email,
+        &__address {
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+
+        &__col {
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+        }
+
+        &__link {
+            padding: 8px 0;
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 20px;
+
+        &__header img {
+            max-width: 110px;
+        }
+
+        &__me img {
+            max-width: 200px;
+        }
+
+        &__email {
+            padding: 20px 0 5px;
+        }
+
+        &__email,
+        &__address {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+        &__email,
+        &__address {
+            font-size: 20px;
+        }
+
+        &__col {
+            width: 45px;
+            height: 45px;
+            font-size: 19px;
+        }
+
+        &__link {
+            padding: 9px 0;
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 30px;
+
+        &__header img {
+            max-width: 128px;
+        }
+
+        &__me img {
+            max-width: 250px;
+        }
+
+        &__email,
+        &__address {
+            font-size: 22px;
+        }
+
+        &__col {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        &__link {
+            padding: 10px 0;
+            font-size: 16px;
+        }
+    }
+}

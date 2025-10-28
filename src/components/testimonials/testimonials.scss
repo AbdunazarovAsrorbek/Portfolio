@@ -1,0 +1,220 @@
+.testimonials {
+    padding-top: 90px;
+  
+    &__subtitle {
+      font-size: 12px;
+      color: #ffffff;
+      font-weight: 300;
+      border: 1px solid #565656;
+      padding: 9px 20px;
+      border-radius: 30px;
+      margin-bottom: 53px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  
+      p {
+        margin-top: 1px;
+        text-transform: uppercase;
+      }
+    }
+  
+    &__title {
+      font-size: 48px;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 40px;
+  
+      span {
+        color: #28e98c;
+      }
+    }
+  
+    &__col {
+      min-width: 100%;
+      border: 2px solid #565656;
+      border-radius: 30px;
+      padding: 50px 40px;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease;
+  
+      &:hover {
+        border-color: #28e98c;
+      }
+  
+      p {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 300;
+        line-height: 32px;
+        margin-bottom: 27px;
+      }
+    }
+  
+    &__col-subtitle {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+  
+    &__col-subtitle-left {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #565656;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: #fff;
+      font-weight: 400;
+    }
+  
+    &__col-subtitle-right {
+      h3 {
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 6px;
+      }
+  
+      p {
+        color: #999999;
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.3;
+  
+        span {
+          color: #28e98c;
+        }
+      }
+    }
+  
+    /* 🟢 Swiper styling */
+    .mySwiper {
+      width: 100%;
+      padding-bottom: 50px;
+  
+      .swiper-pagination-bullet {
+        background-color: #777;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+  
+      .swiper-pagination-bullet-active {
+        background-color: #28e98c;
+        width: 20px;
+        border-radius: 10px;
+      }
+    }
+  
+    /* 📱 Mobil (≤480px) */
+    @media (max-width: 480px) {
+      padding-top: 60px;
+  
+      &__subtitle {
+        font-size: 10px;
+        padding: 6px 14px;
+        margin-bottom: 30px;
+      }
+  
+      &__title {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 25px;
+      }
+  
+      &__col {
+        padding: 25px 20px;
+        border-radius: 20px;
+  
+        p {
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 20px;
+        }
+      }
+  
+      &__col-subtitle {
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+  
+      &__col-subtitle-left {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+      }
+  
+      &__col-subtitle-right {
+        h3 {
+          font-size: 14px;
+        }
+  
+        p {
+          font-size: 11px;
+        }
+      }
+  
+      .mySwiper {
+        padding-bottom: 30px;
+  
+        .swiper-pagination-bullet {
+          width: 8px;
+          height: 8px;
+        }
+  
+        .swiper-pagination-bullet-active {
+          width: 14px;
+        }
+      }
+    }
+  
+    /* 📲 Planshet (481px–767px) */
+    @media (min-width: 481px) and (max-width: 767px) {
+      &__title {
+        font-size: 36px;
+        line-height: 48px;
+      }
+  
+      &__col {
+        padding: 35px 30px;
+  
+        p {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+  
+      &__col-subtitle-left {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+    }
+  
+    /* 💻 O‘rta ekran (768px–1199px) */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      &__title {
+        font-size: 42px;
+        line-height: 54px;
+      }
+  
+      &__col {
+        padding: 40px 35px;
+  
+        p {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  

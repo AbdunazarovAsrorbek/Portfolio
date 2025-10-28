@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    background: #000;
+    overflow-x: hidden;
+    // overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    // sm (>=640px)
+    @media (min-width: 640px) {
+        max-width: 640px;
+    }
+
+    // md (>=768px)
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    // lg (>=1024px)
+    @media (min-width: 1024px) {
+        max-width: 1024px;
+    }
+
+    // xl (>=1280px)
+    @media (min-width: 1370px) {
+        max-width: 1370px;
+    }
+
+    // 2xl (>=1536px)
+    @media (min-width: 1536px) {
+        max-width: 1536px;
+    }
+}
+
+[id] {
+    scroll-margin-top: 64px;
+}
+
+
+// Pages
+@import "../pages/home/home";
+
+// Components
+@import "../components/leftSidebar/leftSidebar";
+@import "../components/centerSidebar/centerSidebar";
+@import "../components/rightSidebar/rightSidebar";
+
+@import "../components/introduce/introduce";
+@import "../components/about/about";
+@import "../components/resume/resume";
+@import "../components/services/services";
+@import "../components/skills/skills";
+@import "../components/portfolio/portfolio";
+@import "../components/testimonials/testimonials";
+@import "../components/contact/contact";
+@import "../components/languageSwitcher/languageSwitcher";
+@import "../components/toggle/toggle";
+@import "../components/toggleTwo/toggleTwo";
+
+@import "../components/loader/lodaer";
+@import "../components/reveal/reveal";

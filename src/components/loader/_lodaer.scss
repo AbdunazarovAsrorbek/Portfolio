@@ -1,0 +1,40 @@
+.loader-circle {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader-svg {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    animation: spinText 7s linear infinite; 
+  }
+
+  .circle-text {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    fill: #ccc;
+  }
+
+  .loader-icon {
+    position: absolute;
+    font-size: 40px;
+    color: #ccc;
+    z-index: 2;
+  }
+}
+
+@keyframes spinText {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

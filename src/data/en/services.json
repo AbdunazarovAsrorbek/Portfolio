@@ -1,0 +1,24 @@
+{
+  "subtitle": "Services",
+  "title": "My Directions",
+  "items": [
+    {
+      "title": "Interactive Web Projects",
+      "text": "Created the design and interactive functionality of 3 projects using Figma.",
+      "projects": "3 projects",
+      "icon": "las la-bezier-curve"
+    },
+    {
+      "title": "Frontend Development",
+      "text": "I build functional and user-friendly websites using React and modern web technologies.",
+      "projects": "5 projects",
+      "icon": "las la-code"
+    },
+    {
+      "title": "Web Optimization",
+      "text": "I create efficient web projects by improving site speed, usability, and code quality.",
+      "projects": "2 projects",
+      "icon": "las la-chart-line"
+    }
+  ]
+}

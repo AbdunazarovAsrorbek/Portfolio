@@ -1,0 +1,22 @@
+{
+  "subtitle": "контакты",
+  "title": {
+    "before": "Отправьте сообщение",
+    "highlight": "вы получите ответ вскоре!"
+  },
+  "email": "abdunazarovasror16@gmail.com",
+  "form": {
+    "fullName": "Полное имя",
+    "fullNamePlaceholder": "Ваше имя и фамилия",
+    "telegram": "Имя пользователя Telegram",
+    "telegramPlaceholder": "@username",
+    "email": "Электронная почта",
+    "emailPlaceholder": "Ваш адрес электронной почты",
+    "phone": "Телефон",
+    "phonePlaceholder": "Ваш номер телефона",
+    "optional": "по желанию",
+    "message": "Сообщение",
+    "messagePlaceholder": "Напишите сообщение здесь...",
+    "send": "Отправить сообщение"
+  }
+}

@@ -1,0 +1,155 @@
+.resume {
+    margin-top: 90px;
+  
+    &__subtitle {
+      font-size: 12px;
+      color: #ffffff;
+      font-weight: 300;
+      border: 1px solid #565656;
+      padding: 9px 20px;
+      border-radius: 30px;
+      margin-bottom: 53px;
+  
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  
+      p {
+        margin-top: 1px;
+        text-transform: uppercase;
+      }
+    }
+  
+    &__title {
+      font-size: 48px;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 33px;
+  
+      span {
+        color: #28e98c;
+      }
+    }
+  
+    &__icon {
+      width: 16px;
+      height: 16px;
+      color: #fff;
+    }
+  
+    &__item-year {
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+      margin: 7.5px 0 2px;
+    }
+  
+    &__item-title {
+      font-size: 17px;
+      font-weight: 500;
+      margin: 5px 0 3px;
+      color: #eee;
+    }
+  
+    &__item-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: #ccc;
+      line-height: 22px;
+    }
+  
+    .css-84nvo4-MuiTimeline-root {
+      padding: 0;
+    }
+  
+    .css-w6t25c-MuiTypography-root-MuiTimelineContent-root {
+      padding: 6px 16px 0 16px;
+    }
+  
+    /* 📱 Mobil (<=480px) */
+    @media (max-width: 480px) {
+      margin-top: 60px;
+  
+      &__subtitle {
+        font-size: 10px;
+        padding: 6px 14px;
+        margin-bottom: 30px;
+        gap: 6px;
+      }
+  
+      &__title {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 20px;
+      }
+  
+      &__item-year {
+        font-size: 14px;
+      }
+  
+      &__item-title {
+        font-size: 13px;
+      }
+  
+      &__item-text {
+        font-size: 12px;
+        line-height: 20px;
+      }
+  
+      .css-w6t25c-MuiTypography-root-MuiTimelineContent-root {
+        padding: 4px 10px;
+      }
+    }
+  
+    /* 📲 Planshet (481px–767px) */
+    @media (min-width: 481px) and (max-width: 767px) {
+      margin-top: 70px;
+  
+      &__subtitle {
+        font-size: 11px;
+        padding: 8px 18px;
+        margin-bottom: 40px;
+      }
+  
+      &__title {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 25px;
+      }
+  
+      &__item-year {
+        font-size: 16px;
+      }
+  
+      &__item-title {
+        font-size: 15px;
+      }
+  
+      &__item-text {
+        font-size: 13px;
+      }
+    }
+  
+    /* 💻 O‘rta ekran (768px–1199px) */
+    @media (min-width: 768px) and (max-width: 1199px) {
+      &__title {
+        font-size: 42px;
+        line-height: 54px;
+      }
+  
+      &__item-title {
+        font-size: 16px;
+      }
+  
+      &__item-text {
+        font-size: 13.5px;
+      }
+    }
+  }
+  

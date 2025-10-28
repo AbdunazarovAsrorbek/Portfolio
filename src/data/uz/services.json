@@ -1,0 +1,24 @@
+{
+  "subtitle": "Xizmatlar",
+  "title": "Mening Yo‘nalishlarim",
+  "items": [
+    {
+      "title": "Interaktiv web-loyihalar",
+      "text": "Figma yordamida 3 ta loyihaning dizaynini va interaktiv funksionalligini yaratdim.",
+      "projects": "3 loyiha",
+      "icon": "las la-bezier-curve"
+    },
+    {
+      "title": "Frontend dasturlash",
+      "text": "React va zamonaviy web texnologiyalar yordamida funksional va foydalanuvchiga qulay saytlar ishlab chiqaman.",
+      "projects": "5 loyiha",
+      "icon": "las la-code"
+    },
+    {
+      "title": "Veb optimizatsiya",
+      "text": "Saytlarning tezligi, qulayligi va kod sifatini oshirish orqali samarali veb-loyihalar yarataman.",
+      "projects": "2 loyiha",
+      "icon": "las la-chart-line"
+    }
+  ]
+}

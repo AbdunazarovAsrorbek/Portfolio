@@ -1,0 +1,26 @@
+{
+  "subtitle": "Rezyume",
+  "title": "Ta'lim va Tajriba",
+  "timeline": [
+    {
+      "year": "2024 – 2025",
+      "title": "IT Park",
+      "text": "IT Park kurslarida qatnashib, zamonaviy texnologiyalar bo‘yicha amaliy tajriba orttirdim."
+    },
+    {
+      "year": "2025",
+      "title": "Shaxsiy Portfolio va Loyihalar",
+      "text": "Shaxsiy portfolioni saytimni ishlab chiqdim va 5 dan ortiq real veb loyihalarda ishtirok etdim."
+    },
+    {
+      "year": "2025",
+      "title": "TATU Innovatsion Loyihasi",
+      "text": "TATUda ishlaydigan dasturchilar bilan iqtisodiy samaradorlikka qaratilgan innovatsion loyihada hamkorlik qildim."
+    },
+    {
+      "year": "Kelajak",
+      "title": "Kelajak Rejalari",
+      "text": "Global loyihalarda ishtirok etish, o‘z IT kompaniyamni yaratish va innovatsion yutuqlarga erishish maqsad qilganman."
+    }
+  ]
+}

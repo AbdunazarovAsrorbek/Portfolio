@@ -1,0 +1,20 @@
+{
+  "subtitle": "portfolio",
+  "title": {
+    "before": "Oxirgi",
+    "after": "Loyihalar"
+  },
+  "viewProject": "Loyihani ko‘rish",
+  "projects": [
+    {
+      "title": "TUIT Bitiruvchilar Platformasi",
+      "date": "Avgust 2025",
+      "link": "https://alumni.tuit.uz"
+    },
+    {
+      "title": "Kvartira Arenda",
+      "date": "Oktyabr 2025",
+      "link": "https://kvartira-arenda.uz"
+    }
+  ]
+}

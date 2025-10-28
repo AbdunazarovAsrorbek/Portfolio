@@ -1,0 +1,22 @@
+{
+  "subtitle": "Mijozlar Fikri",
+  "title": "Ishonch bildirgan",
+  "highlight": "Ba’zi mijozlar",
+  "items": [
+    {
+      "name": "Sanjar",
+      "position": "Frontend dasturchi",
+      "text": "Asror — ijodkor va professional dasturchi. Yuqori sifatli ishlari va samarali muloqoti bilan tavsiya qilaman."
+    },
+    {
+      "name": "Ozodbek",
+      "position": "Backend dasturchi",
+      "text": "Asror bilan ishlash yoqimli bo‘ldi. U har qanday loyihani ishonch bilan topshirish mumkin bo‘lgan professional."
+    },
+    {
+      "name": "Tulkin",
+      "position": "Frontend dasturchi",
+      "text": "Juda professional va tezkor xizmat! U bilan bir nechta loyiha amalga oshirganmiz."
+    }
+  ]
+}

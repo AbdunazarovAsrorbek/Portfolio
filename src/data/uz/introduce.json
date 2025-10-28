@@ -1,0 +1,19 @@
+{
+  "subtitle": "Kirish",
+  "title": {
+    "before": "Ismim",
+    "name": "Asror",
+    "after": "— frontend dasturchiman"
+  },
+  "description": "Foydalanuvchi uchun qulay va estetik veb interfeyslar yaratuvchi frontend dasturchiman",
+  "facts": {
+    "experience": {
+      "years": "1+",
+      "text": "Yillik <br /> tajriba"
+    },
+    "clients": {
+      "count": "5+",
+      "text": "Hozirgacha amalga oshirgan<br />loyihalarim"
+    }
+  }
+}

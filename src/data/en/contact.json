@@ -1,0 +1,22 @@
+{
+  "subtitle": "contact",
+  "title": {
+    "before": "Send a message",
+    "highlight": "you will receive a reply soon!"
+  },
+  "email": "abdunazarovasror16@gmail.com",
+  "form": {
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Your first and last name",
+    "telegram": "Telegram username",
+    "telegramPlaceholder": "@username",
+    "email": "Email",
+    "emailPlaceholder": "Your email address",
+    "phone": "Phone",
+    "phonePlaceholder": "Your phone number",
+    "optional": "optional",
+    "message": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "send": "Send Message"
+  }
+}

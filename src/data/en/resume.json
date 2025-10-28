@@ -1,0 +1,26 @@
+{
+  "subtitle": "Resume",
+  "title": "Education & Experience",
+  "timeline": [
+    {
+      "year": "2024 – 2025",
+      "title": "IT Park",
+      "text": "Participated in IT Park courses and gained hands-on experience with modern technologies."
+    },
+    {
+      "year": "2025",
+      "title": "Personal Portfolio & Projects",
+      "text": "Developed my personal portfolio website and participated in more than 5 real web projects."
+    },
+    {
+      "year": "2025",
+      "title": "TATU Innovation Project",
+      "text": "Collaborated with developers at TATU on an innovative project focused on economic efficiency."
+    },
+    {
+      "year": "Future",
+      "title": "Future Plans",
+      "text": "Aiming to participate in global projects, create my own IT company, and achieve innovative accomplishments."
+    }
+  ]
+}

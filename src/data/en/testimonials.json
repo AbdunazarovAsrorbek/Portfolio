@@ -1,0 +1,22 @@
+{
+  "subtitle": "Client Feedback",
+  "title": "Trusted by",
+  "highlight": "Some clients",
+  "items": [
+    {
+      "name": "Sanjar",
+      "position": "Frontend Developer", 
+      "text": "Asror is a creative and professional developer. I recommend him for high-quality work and effective communication."
+    },
+    {
+      "name": "Ozodbek",
+      "position": "Backend Developer",
+      "text": "It was a pleasure working with Asror. He is a professional you can trust with any project."
+    },
+    {
+      "name": "Tulkin",
+      "position": "Frontend Developer",
+      "text": "Very professional and fast service! We have completed several projects with him."
+    }
+  ]
+}

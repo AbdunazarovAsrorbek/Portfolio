@@ -1,0 +1,22 @@
+{
+  "subtitle": "portfolio",
+  "title": {
+    "before": "Latest",
+    "after": "Projects"
+  },
+  "viewProject": "View Project",
+  "projects": [
+    {
+      "title": "TUIT Alumni Platform",
+      "date": "August 2025",
+      "link": "https://alumni.tuit.uz"
+    },
+    {
+      "title": "Kvartira Arenda",
+      "date": "October 2025",
+      "link": "https://kvartira-arenda.uz"
+    }
+  ]
+}
+
+

@@ -1,0 +1,237 @@
+.skills {
+  padding-top: 90px;
+
+  &__subtitle {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 300;
+    border: 1px solid #565656;
+    padding: 9px 20px;
+    border-radius: 30px;
+    margin-bottom: 53px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    p {
+      margin-top: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 33px;
+
+    span {
+      color: #28e98c;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__col {
+    max-width: calc(25% - 10px);
+    min-width: calc(25% - 10px);
+  }
+
+  &__col-card {
+    min-width: 100%;
+    min-height: 240px;
+    border: 2px solid #565656;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 40px 35px;
+
+    &:hover {
+      border: 2px solid #28e98c;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: #28e98c;
+      font-weight: 300;
+      margin-top: 25px;
+      text-transform: uppercase;
+    }
+  }
+
+  /* 📱 Responsiv qo‘shimcha */
+  @media (max-width: 480px) {
+    &__row {
+      justify-content: center;
+      gap: 15px;
+    }
+
+    &__subtitle{
+      font-size: 11px;
+        padding: 7px 15px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom:33px;
+    }
+
+    &__col {
+      max-width: calc(50% - 10px);
+      min-width: calc(50% - 10px);
+    }
+
+    &__col-card {
+      min-height: 200px;
+      padding: 25px 20px;
+      border-radius: 30px;
+
+      div {
+        width: 70px;
+        height: 70px;
+      }
+
+      img {
+        max-width: 70px;
+        max-height: 70px;
+      }
+
+      h1 {
+        font-size: 18px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+
+/* 📱 481px – 576px (o‘rta telefonlar) */
+@media (min-width: 481px) and (max-width: 576px) {
+  .skills {
+    padding-top: 80px;
+
+    &__subtitle {
+      font-size: 12px;
+      padding: 8px 18px;
+      margin-bottom: 45px;
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 44px;
+      margin-bottom: 30px;
+    }
+
+    &__row {
+      justify-content: center;
+      gap: 15px;
+    }
+
+    &__col {
+      max-width: calc(50% - 10px);
+      min-width: calc(50% - 10px);
+    }
+
+    &__col-card {
+      min-height: 210px;
+      padding: 30px 25px;
+      border-radius: 35px;
+
+      div {
+        width: 80px;
+        height: 80px;
+      }
+
+      img {
+        max-width: 80px;
+        max-height: 80px;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+
+/* 💻 577px – 767px (kichik planshetlar) */
+@media (min-width: 577px) and (max-width: 767px) {
+  .skills {
+    padding-top: 90px;
+
+    &__subtitle {
+      font-size: 13px;
+      padding: 9px 22px;
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      font-size: 38px;
+      line-height: 50px;
+      margin-bottom: 35px;
+
+      span {
+        color: #28e98c;
+      }
+    }
+
+    &__row {
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* 🔹 3 ustunli joylashuv (katta ekranga yaqin) */
+    &__col {
+      max-width: calc(33.33% - 13.5px);
+      min-width: calc(33.33% - 13.5px);
+    }
+
+    &__col-card {
+      min-height: 230px;
+      padding: 35px 25px;
+      border-radius: 40px;
+
+      div {
+        width: 85px;
+        height: 85px;
+      }
+
+      img {
+        max-width: 85px;
+        max-height: 85px;
+      }
+
+      h1 {
+        font-size: 22px;
+        margin-top: 22px;
+      }
+    }
+  }
+}

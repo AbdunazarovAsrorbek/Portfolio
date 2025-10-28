@@ -1,0 +1,19 @@
+{
+  "subtitle": "Introduction",
+  "title": {
+    "before": "My name is",
+    "name": "Asror",
+    "after": "— frontend developer"
+  },
+  "description": "Frontend developer who creates user-friendly and aesthetic web interfaces",
+  "facts": {
+    "experience": {
+      "years": "1+",
+      "text": "Years <br /> of experience"
+    },
+    "clients": {
+      "count": "5+",
+      "text": "Completed <br /> projects"
+    }
+  }
+}
