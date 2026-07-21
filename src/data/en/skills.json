@@ -30,7 +30,7 @@
     {
       "name": "JS",
       "image": "js",
-      "direction": "up"
+      "direction": "down"
     },
     {
       "name": "React",
@@ -40,6 +40,26 @@
     {
       "name": "TS",
       "image": "ts",
+      "direction": "left"
+    },
+    {
+      "name": "PM",
+      "image": "postman",
+      "direction": "right"
+    },
+    {
+      "name": "TW",
+      "image": "tailwind",
+      "direction": "up"
+    },
+    {
+      "name": "Redux",
+      "image": "redux",
+      "direction": "down"
+    },
+    {
+      "name": "GitHub",
+      "image": "github",
       "direction": "left"
     }
   ]

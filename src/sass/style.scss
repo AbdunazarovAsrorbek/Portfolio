@@ -1,3 +1,26 @@
+// Pages
+@use "../pages/home/home";
+
+// Components
+@use "../components/leftSidebar/leftSidebar";
+@use "../components/centerSidebar/centerSidebar";
+@use "../components/rightSidebar/rightSidebar";
+
+@use "../components/introduce/introduce";
+@use "../components/about/about";
+@use "../components/resume/resume";
+@use "../components/services/services";
+@use "../components/skills/skills";
+@use "../components/portfolio/portfolio";
+@use "../components/testimonials/testimonials";
+@use "../components/contact/contact";
+@use "../components/languageSwitcher/languageSwitcher";
+@use "../components/toggle/toggle";
+@use "../components/toggleTwo/toggleTwo";
+
+@use "../components/loader/lodaer";
+@use "../components/reveal/reveal";
+
 * {
     margin: 0;
     padding: 0;
@@ -68,27 +91,3 @@ li {
 [id] {
     scroll-margin-top: 64px;
 }
-
-
-// Pages
-@import "../pages/home/home";
-
-// Components
-@import "../components/leftSidebar/leftSidebar";
-@import "../components/centerSidebar/centerSidebar";
-@import "../components/rightSidebar/rightSidebar";
-
-@import "../components/introduce/introduce";
-@import "../components/about/about";
-@import "../components/resume/resume";
-@import "../components/services/services";
-@import "../components/skills/skills";
-@import "../components/portfolio/portfolio";
-@import "../components/testimonials/testimonials";
-@import "../components/contact/contact";
-@import "../components/languageSwitcher/languageSwitcher";
-@import "../components/toggle/toggle";
-@import "../components/toggleTwo/toggleTwo";
-
-@import "../components/loader/lodaer";
-@import "../components/reveal/reveal";

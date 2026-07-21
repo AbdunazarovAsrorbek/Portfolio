@@ -10,6 +10,10 @@ import js from "../../assets/svg/js.svg";
 import react from "../../assets/svg/react-removebg-preview.png";
 import ts from "../../assets/svg/ts.svg";
 import mysql from "../../assets/svg/bootstrap.svg";
+import tailwind from "../../assets/svg/tailwind.svg";
+import postman from "../../assets/svg/postman.svg";
+import redux from "../../assets/svg/redux.svg";
+import github from "../../assets/svg/github.svg";
 
 interface SkillsData {
     subtitle: string;
@@ -28,8 +32,8 @@ export default function Skills() {
 
 
     // Debugging uchun: konsolda ma'lumotlarni tekshirish
-    console.log("Current language:", i18n.language);
-    console.log("Resume data:", skills);
+    // console.log("Current language:", i18n.language);
+    // console.log("Resume data:", skills);
 
     const titleParts = skills?.title?.split(" ") || ["Ta'lim", "Tajriba"];
     const skill = skills?.skill || [];
@@ -43,6 +47,10 @@ export default function Skills() {
         react,
         ts,
         mysql,
+        tailwind,
+        postman,
+        redux,
+        github
     };
 
     return (

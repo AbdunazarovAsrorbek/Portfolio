@@ -7,7 +7,7 @@ export default function Loader() {
   const loaderText = t("loader.text");
   const portfolioLink = `#${t("loader.link")}`;
 
-  console.log(loaderText);
+  // console.log(loaderText);
 
   return (
     <div className="loader-circle">

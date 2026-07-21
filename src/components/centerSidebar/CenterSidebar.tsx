@@ -1,7 +1,7 @@
 import About from "../about/About";
 import Introduce from "../introduce/Introduce";
 import Resume from "../resume/Resume";
-import Services from "../services/Services";
+// import Services from "../services/Services";
 import Skills from "../skills/Skills";
 import Portfolio from "../portfolio/Portfolio";
 import Testimonials from "../testimonials/Testimonials";
@@ -14,7 +14,7 @@ export default function CenterSidebar() {
       <Introduce />
       <About />
       <Resume />
-      <Services />
+      {/* <Services /> */}
       <Skills />
       <Portfolio />
       <Testimonials />

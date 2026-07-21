@@ -75,11 +75,15 @@
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 22px;
       color: #28e98c;
       font-weight: 300;
       margin-top: 25px;
       text-transform: uppercase;
+      /* Qo‘shing */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
@@ -90,15 +94,15 @@
       gap: 15px;
     }
 
-    &__subtitle{
+    &__subtitle {
       font-size: 11px;
-        padding: 7px 15px;
+      padding: 7px 15px;
     }
 
     &__title {
       font-size: 28px;
       line-height: 38px;
-      margin-bottom:33px;
+      margin-bottom: 33px;
     }
 
     &__col {

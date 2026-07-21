@@ -1,0 +1,7 @@
+# public/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap joylashuvi
+Sitemap: https://dreamcode.uz/sitemap.xml

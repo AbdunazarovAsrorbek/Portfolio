@@ -1,5 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 // 🔤 JSON tarjimalarni import qilamiz
 import aboutUZ from "../data/uz/about.json";
@@ -13,6 +14,7 @@ import rightSidebarUZ from "../data/uz/rightSidebar.json";
 import servicesUZ from "../data/uz/services.json";
 import skillsUZ from "../data/uz/skills.json";
 import testimonialsUZ from "../data/uz/testimonials.json";
+import seoUZ from "../data/uz/seo.json";
 
 import aboutRU from "../data/ru/about.json";
 import contactRU from "../data/ru/contact.json";
@@ -25,6 +27,7 @@ import rightSidebarRU from "../data/ru/rightSidebar.json";
 import servicesRU from "../data/ru/services.json";
 import skillsRU from "../data/ru/skills.json";
 import testimonialsRU from "../data/ru/testimonials.json";
+import seoRU from "../data/ru/seo.json";
 
 import aboutEN from "../data/en/about.json";
 import contactEN from "../data/en/contact.json";
@@ -37,6 +40,7 @@ import rightSidebarEN from "../data/en/rightSidebar.json";
 import servicesEN from "../data/en/services.json";
 import skillsEN from "../data/en/skills.json";
 import testimonialsEN from "../data/en/testimonials.json";
+import seoEN from "../data/en/seo.json";
 
 // 🌍 Tarjimalar strukturasi
 const resources = {
@@ -52,6 +56,7 @@ const resources = {
     services: servicesUZ,
     skills: skillsUZ,
     testimonials: testimonialsUZ,
+    seo: seoUZ,
   },
   ru: {
     about: aboutRU,
@@ -65,6 +70,7 @@ const resources = {
     services: servicesRU,
     skills: skillsRU,
     testimonials: testimonialsRU,
+    seo: seoRU,
   },
   en: {
     about: aboutEN,
@@ -78,16 +84,27 @@ const resources = {
     services: servicesEN,
     skills: skillsEN,
     testimonials: testimonialsEN,
+    seo: seoEN,
   },
 };
 
+// 🧹 ESKI NOTO'G'RI KESHNI TOZALASH
+// Ba'zi brauzerlar "en-EN", "ru-RU" kabi nostandart formatlarni localStorage'ga
+// yozib qo'yishi mumkin edi (eski koddan qolgan). Bunday holatda keshni tozalaymiz,
+// aks holda i18next resources ichida mos kalitni topa olmay, ma'lumot bo'sh chiqadi.
+const savedLang = localStorage.getItem("portfolio-lang");
+if (savedLang && savedLang.includes("-")) {
+  localStorage.removeItem("portfolio-lang");
+}
+
 // 🧠 i18next konfiguratsiyasi
 i18n
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: "uz", // default til
-    fallbackLng: "uz", // agar topilmasa
+    fallbackLng: "uz",
+    load: "languageOnly",
     ns: [
       "about",
       "contact",
@@ -100,10 +117,18 @@ i18n
       "services",
       "skills",
       "testimonials",
+      "seo",
     ],
     defaultNS: "introduce",
     interpolation: {
       escapeValue: false,
+    },
+    detection: {
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
+      lookupLocalStorage: "portfolio-lang",
+      // 👇 har qanday "en-EN", "ru-RU" kabi kodni "en", "ru" ga aylantiradi
+      convertDetectedLanguage: (lng: string) => lng.split("-")[0],
     },
   });
 

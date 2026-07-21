@@ -1,10 +1,20 @@
-import { HomeOutlined } from "@ant-design/icons";
+import { DownloadOutlined, HomeOutlined } from "@ant-design/icons";
 import Loader from "../loader/Loader";
 import Reveal from "../reveal/Reveal";
 import { useTranslation } from "react-i18next";
 
+const resumeLanguage = {
+  uz: "Asror_Abdunazarov_Resume_UZ.pdf",
+  ru: "Asror_Abdunazarov_Resume_RU.pdf",
+  en: "Asror_Abdunazarov_Resume_EN.pdf",
+}
+
 export default function Introduce() {
-  const { t } = useTranslation("introduce");
+  const { t, i18n } = useTranslation("introduce");
+
+  const resumeFile =
+    resumeLanguage[i18n.resolvedLanguage as keyof typeof resumeLanguage] ??
+    resumeLanguage.uz;
 
   return (
     <div className="introduce">
@@ -23,6 +33,18 @@ export default function Introduce() {
 
       <Reveal direction="up">
         <p className="introduce__uptitle">{t("description")}</p>
+      </Reveal>
+
+      <Reveal direction="up">
+        <button
+          onClick={() =>
+            window.open(`/${resumeFile}`, "_blank", "noopener,noreferrer")
+          }
+          className="introduce__download-btn"
+        >
+          <DownloadOutlined />
+          {t("resumeDownload")}
+        </button>
       </Reveal>
 
       <Reveal direction="up">

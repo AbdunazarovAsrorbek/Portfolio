@@ -7,7 +7,7 @@ import {
     HomeOutlined,
     UserOutlined,
     ReadOutlined,
-    ToolOutlined,
+    // ToolOutlined,
     CodeOutlined,
     AppstoreAddOutlined,
     CommentOutlined,
@@ -28,7 +28,7 @@ export default function ToggleTwo() {
         { id: "Home", icon: <HomeOutlined />, label: t("home") },
         { id: "About", icon: <UserOutlined />, label: t("about") },
         { id: "Resume", icon: <ReadOutlined />, label: t("resume") },
-        { id: "Services", icon: <ToolOutlined />, label: t("services") },
+        // { id: "Services", icon: <ToolOutlined />, label: t("services") },
         { id: "Skills", icon: <CodeOutlined />, label: t("skills") },
         { id: "Portfolio", icon: <AppstoreAddOutlined />, label: t("portfolio") },
         { id: "Testimonials", icon: <CommentOutlined />, label: t("testimonials") },
@@ -40,11 +40,11 @@ export default function ToggleTwo() {
     return (
         <>
             {isOpen && (
-  <div
-    className={`toggleTwo__overlay ${isOpen ? "toggleTwo__overlay--active" : ""}`}
-    onClick={handleClose}
-  ></div>
-)}
+                <div
+                    className={`toggleTwo__overlay ${isOpen ? "toggleTwo__overlay--active" : ""}`}
+                    onClick={handleClose}
+                ></div>
+            )}
 
             <div className="toggleTwo">
                 {/* Asosiy tugma */}
@@ -58,26 +58,26 @@ export default function ToggleTwo() {
 
                 {/* Yon menyu */}
                 <div className={`toggleTwo__menu ${isOpen ? "toggleTwo__menu--open" : ""}`}>
-                 <div>
-                 <div className="toggleTwo__menu-header">
-                        <h3>{t("menu")}</h3>
-                        <button className="toggleTwo__menu-close" onClick={handleClose}>
-                            <CloseOutlined />
-                        </button>
-                    </div>
+                    <div>
+                        <div className="toggleTwo__menu-header">
+                            <h3>{t("menu")}</h3>
+                            <button className="toggleTwo__menu-close" onClick={handleClose}>
+                                <CloseOutlined />
+                            </button>
+                        </div>
 
-                    <ul className="toggleTwo__menu-links">
-                        {links.map((link) => (
-                            <li key={link.id}>
-                                <a href={`#${link.id}`} onClick={handleClose}>
-                                    {link.icon}
-                                    <span>{link.label}</span>
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                    <LanguageSwitcher />
-                 </div>
+                        <ul className="toggleTwo__menu-links">
+                            {links.map((link) => (
+                                <li key={link.id}>
+                                    <a href={`#${link.id}`} onClick={handleClose}>
+                                        {link.icon}
+                                        <span>{link.label}</span>
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                        <LanguageSwitcher />
+                    </div>
                     <div className="toggle__menu-socials-main">
                         <a href="https://github.com/AbdunazarovAsrorbek" target="_blank" rel="noopener noreferrer">
                             <GithubOutlined />

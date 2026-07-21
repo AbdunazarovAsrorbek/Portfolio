@@ -5,9 +5,12 @@ import LeftSidebar from "../../components/leftSidebar/LeftSidebar";
 import RightSidebar from "../../components/rightSidebar/RightSidebar";
 import { OrbitProgress } from "react-loading-indicators";
 import Toggle from "../../components/toggle/Toggle";
+import SEO from "../../components/SEO";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const { t } = useTranslation("seo");
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1500);
@@ -26,31 +29,36 @@ export default function Home() {
   }
 
   return (
-    <div className="home">
-      <div className="home__particles">
-        <Particles />
-      </div>
+    <>
+      <SEO title={t("title")} description={t("description")} />
 
-      <Toggle />
+      <div className="home">
+        <div className="home__particles">
+          <Particles />
+        </div>
 
-      <div className="home__content">
-        <div className="container">
-          <div className="home__main">
-            <div className="home__main-left">
-              <LeftSidebar />
-            </div>
+        <Toggle />
 
-            <div className="home__main-center">
-              <CenterSidebar />
-            </div>
+        <div className="home__content">
+          <div className="container">
+            <div className="home__main">
+              <div className="home__main-left">
+                <LeftSidebar />
+              </div>
 
-            <div className="home__main-right">
+              <div className="home__main-center">
+                <CenterSidebar />
+              </div>
+
+              <div className="home__main-right">
                 <RightSidebar />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-    </div>
+      </div>
+    </>
+
   );
 }

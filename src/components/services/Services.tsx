@@ -16,11 +16,11 @@ interface ServicesData {
 export default function Services() {
   const { i18n } = useTranslation("services"); // "services" namespace ishlatiladi
   const services = i18n.getResourceBundle(i18n.language, "services") as ServicesData | undefined;
-  console.log("Current language:", i18n.language);
-  console.log("services data:", services);
+  // console.log("Current language:", i18n.language);
+  // console.log("services data:", services);
 
   // Ma'lumotlarni konsolga chiqarish (debug uchun)
-  console.log("Services data:", services);
+  // console.log("Services data:", services);
 
   const titleParts = services?.title?.split(" ") || ["Ta'lim", "Tajriba"];
   const items = services?.items || [];

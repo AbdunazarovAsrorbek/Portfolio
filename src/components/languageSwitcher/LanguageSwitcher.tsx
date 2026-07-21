@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import uz from "../../assets/svg/Flag_of_Uzbekistan.svg.png";
 import ru from "../../assets/svg/Flag_of_Russia.svg.png";
 import en from "../../assets/svg/Flag_of_the_United_States.svg.webp";
@@ -7,6 +7,8 @@ import en from "../../assets/svg/Flag_of_the_United_States.svg.webp";
 export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
   const languages = [
     { code: "uz", img: uz, label: "O'zbekcha" },
@@ -22,8 +24,23 @@ export default function LanguageSwitcher() {
     setOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutSide = (event: MouseEvent) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutSide);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutSide);
+    };
+
+  }, []);
+
   return (
-    <div className="languageSwitcher">
+    <div className="languageSwitcher" ref={wrapperRef}>
       {/* 🌐 TIL TUGMASI */}
       <div
         className="languageSwitcher__icon"
