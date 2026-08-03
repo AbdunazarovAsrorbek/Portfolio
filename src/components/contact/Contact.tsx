@@ -40,9 +40,9 @@ export default function Contact() {
       </Reveal>
 
       <Reveal direction="up">
-        <h1 className="contact__title">
+        <h2 className="contact__title">
           {t("title.before")} <span>{t("title.highlight")}</span>
-        </h1>
+        </h2>
       </Reveal>
 
       <Reveal direction="up">

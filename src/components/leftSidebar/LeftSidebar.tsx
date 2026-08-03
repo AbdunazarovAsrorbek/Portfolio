@@ -22,12 +22,12 @@ export default function LeftSidebar() {
       </div>
 
       <div className="leftSidebar__me">
-        <img src={photo6} alt="profile" />
+        <img src={photo6} alt="Abdunazarov Asrorbek — Frontend Developer Portfolio, Asror, Abdunazarov, Asrorbek, Asror Abdunazarov, Abdunazarov Asrorbek, Asrorbek Abdunazarov, Abdunazarov Asror" />
       </div>
 
-      <h2 className="leftSidebar__email">{t("email")}</h2>
+      <p className="leftSidebar__email">{t("email")}</p>
 
-      <h2 className="leftSidebar__address">{t("address")}</h2>
+      <p className="leftSidebar__address">{t("address")}</p>
 
       <p className="leftSidebar__copyright">{t("copyright")}</p>
 

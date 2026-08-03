@@ -35,9 +35,9 @@ export default function Testimonials() {
       </Reveal>
 
       <Reveal direction="up">
-        <h1 className="testimonials__title">
+        <h2 className="testimonials__title">
           {title} <span>{highlight}</span>
-        </h1>
+        </h2>
       </Reveal>
 
       <Reveal direction="up">

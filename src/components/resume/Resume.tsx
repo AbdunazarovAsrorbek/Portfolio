@@ -41,9 +41,9 @@ export default function Resume() {
       </Reveal>
 
       <Reveal direction="up">
-        <h1 className="resume__title">
+        <h2 className="resume__title">
           {titleParts[0]} & <span>{titleParts[2]}</span>
-        </h1>
+        </h2>
       </Reveal>
 
       <Timeline

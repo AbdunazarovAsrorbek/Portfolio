@@ -14,9 +14,9 @@ export default function About() {
       </Reveal>
 
       <Reveal direction="up">
-        <h1 className="about__title">
+        <h2 className="about__title">
           {t("title.before")} <span>{t("title.highlight")}</span>
-        </h1>
+        </h2>
       </Reveal>
 
       <Reveal direction="up">

@@ -34,9 +34,9 @@ export default function Services() {
       </Reveal>
 
       <Reveal direction="up">
-        <h1 className="services__title">
+        <h2 className="services__title">
           {titleParts[0]} <span>{titleParts[1] || ""}</span>
-        </h1>
+        </h2>
       </Reveal>
 
       <div className="services__row">

@@ -59,12 +59,13 @@
     }
 
     .facts__left {
-        h1 {
+        h1, .facts__number {
             font-size: 72px;
             color: #28e98c;
             line-height: 56px;
             margin-bottom: 38px;
             font-weight: 400;
+            display: block;
         }
 
         p {
@@ -77,12 +78,13 @@
     }
 
     .facts__right {
-        h1 {
+        h1, .facts__number {
             font-size: 72px;
             color: #28e98c;
             line-height: 56px;
             margin-bottom: 38px;
             font-weight: 400;
+            display: block;
         }
 
         p {

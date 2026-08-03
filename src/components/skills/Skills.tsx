@@ -62,9 +62,9 @@ export default function Skills() {
             </Reveal>
 
             <Reveal direction="up">
-                <h1 className="skills__title">
+                <h2 className="skills__title">
                     {titleParts[0]} <span>{titleParts[1] || ""}</span>
-                </h1>
+                </h2>
             </Reveal>
 
             <div className="skills__row">
@@ -76,7 +76,7 @@ export default function Skills() {
                                     <div className="img-box">
                                         <img src={images[skill.image]} alt={skill.name} />
                                     </div>
-                                    <h1>{skill.name}</h1>
+                                    <h3>{skill.name}</h3>
                                 </div>
                             </Reveal>
                         </div>

@@ -56,14 +56,14 @@ export default function Introduce() {
       <div className="introduce__facts">
         <Reveal direction="right">
           <div className="facts__left">
-            <h1>{t("facts.experience.years")}</h1>
+            <span className="facts__number">{t("facts.experience.years")}</span>
             <p dangerouslySetInnerHTML={{ __html: t("facts.experience.text") }} />
           </div>
         </Reveal>
 
         <Reveal direction="left">
           <div className="facts__right">
-            <h1>{t("facts.clients.count")}</h1>
+            <span className="facts__number">{t("facts.clients.count")}</span>
             <p dangerouslySetInnerHTML={{ __html: t("facts.clients.text") }} />
           </div>
         </Reveal>

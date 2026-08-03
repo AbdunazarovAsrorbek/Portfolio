@@ -21,9 +21,9 @@ export default function Portfolio() {
       </Reveal>
 
       <Reveal direction="up">
-        <h1 className="portfolio__title">
+        <h2 className="portfolio__title">
           {t("title.before")} <span>{t("title.after")}</span>
-        </h1>
+        </h2>
       </Reveal>
 
       <div className="portfolio__cards">
