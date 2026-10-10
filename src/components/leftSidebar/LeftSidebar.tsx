@@ -15,7 +15,7 @@ export default function LeftSidebar() {
     <div className="leftSidebar">
       <div className="leftSidebar__header">
         <div className="profile">
-          <p className="avatar">Asror</p>
+          <p className="avatar">Asrorbek</p>
           <span className="badge">A</span>
         </div>
         <p dangerouslySetInnerHTML={{ __html: t("role") }} />
@@ -34,12 +34,12 @@ export default function LeftSidebar() {
       <div className="leftSidebar__icons">
         <div className="leftSidebar__row">
           <div className="leftSidebar__col">
-            <a href="https://github.com/AbdunazarovAsrorbek" target="_blank" rel="noreferrer">
+            <a href="https://github.com/AsrorbekAbdunazarov" target="_blank" rel="noreferrer">
               <GithubOutlined />
             </a>
           </div>
           <div className="leftSidebar__col">
-            <a href="https://linkedin.com/in/asror-abdunazarov-25a7a2377" target="_blank" rel="noreferrer">
+            <a href="https://linkedin.com/in/asrorbek-abdunazarov" target="_blank" rel="noreferrer">
               <LinkedinOutlined />
             </a>
           </div>
