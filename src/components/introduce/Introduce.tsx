@@ -4,9 +4,9 @@ import Reveal from "../reveal/Reveal";
 import { useTranslation } from "react-i18next";
 
 const resumeLanguage = {
-  uz: "CVResumeUZ.pdf",
-  ru: "CVResumeRU.pdf",
-  en: "CVResumeEN.pdf",
+  uz: "Asror_Abdunazarov_Resume_UZ.pdf",
+  ru: "Asror_Abdunazarov_Resume_RU.pdf",
+  en: "Asror_Abdunazarov_Resume_EN.pdf",
 }
 
 export default function Introduce() {
